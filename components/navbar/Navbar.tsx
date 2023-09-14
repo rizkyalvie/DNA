@@ -41,7 +41,7 @@ const Nav = () => {
     </div>
       <NavigationMenu>
         {navList.map((item) => (
-          <Link href={item.url}>
+          <Link key={item.title} href={item.url}>
             <NavigationMenuList className="py-4 px-5 hover:bg-[#606c38] hover:text-white">
               <NavigationMenuItem>{item.title}</NavigationMenuItem>
             </NavigationMenuList>

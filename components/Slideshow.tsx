@@ -63,7 +63,7 @@ export const Slideshow = () => {
   return (
     <div className="w-screen flex gap-5 flex-column px-12 mt-5">
       {productData.map((item) => (
-        <div className="w-[250px] h-[210px] border-solid border-2 border-[#283618]">
+        <div key={item.id} className="w-[250px] h-[210px] border-solid border-2 border-[#283618]">
           <div className="w-full flex h-[150px] overflow-hidden object-cover border-solid border-b-2 border-[#283618]">
             <Image
               src={item.image}
